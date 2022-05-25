@@ -1,5 +1,5 @@
 function hoverNavMove(event) {
-    event.target.style.bottom = '3px';
+    event.target.style.bottom = '2px';
 }
 
 function hoverNavDefault(event) {
