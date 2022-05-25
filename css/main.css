@@ -1,0 +1,65 @@
+body {
+    background-image: linear-gradient(to bottom right, #082032, #2C394B);
+    color: #EEEEEE;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+#nav-left {
+    display: flex;
+    align-items: center;
+}
+
+nav .icon {
+    filter: invert();
+    width: 2rem;
+}
+
+nav a {
+    color: #acacac;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #334756;
+    transition: 0.3s;
+}
+
+/* Main */
+
+main {
+    position: relative;
+    top: 100px;
+    padding: 3%;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    top: 200px;
+}
