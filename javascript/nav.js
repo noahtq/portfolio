@@ -1,5 +1,12 @@
-function hoverNav (event) {
-    event.style.top = "-30px";
+function hoverNavMove(event) {
+    event.target.style.bottom = '3px';
 }
 
-document.querySelector('nav').addEventListener('mouseover', hoverNav);
+function hoverNavDefault(event) {
+    event.target.style.bottom = '';
+}
+
+document.querySelectorAll('.page').forEach(element => {
+    element.addEventListener('mouseover', hoverNavMove);
+    element.addEventListener('mouseout', hoverNavDefault);
+})

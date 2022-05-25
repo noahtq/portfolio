@@ -49,6 +49,17 @@ nav a:hover {
     transition: 0.3s;
 }
 
+.page {
+    position: relative;
+    bottom: 0px;
+    transition: 0.7s;
+}
+
+.active {
+    bottom: 0px;
+    transition: 1s;
+}
+
 /* Main */
 
 main {
