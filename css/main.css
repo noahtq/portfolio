@@ -164,6 +164,7 @@ main {
 }
 
 #tech img {
+    z-index: 3;
     position: relative;
     padding: 2rem;
     width: 9rem;
@@ -181,11 +182,16 @@ main {
     padding: 3rem;
     border-radius: 25px 10px 10px 25px;
     padding-left: 13rem;
-    height: 8rem;
-    transition: 0.3s;
     display: flex;
     flex-direction: column;
     align-content: center;
+    transition: 0.3s;
+}
+
+.icon-right {
+    left: 1rem;
+    padding-right: 13rem;
+    padding-left: 2.5rem;
 }
 
 .info-overlay ul {
