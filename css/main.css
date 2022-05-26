@@ -139,6 +139,7 @@ main {
 /* Technologies */
 
 #tech {
+    position: relative;
     margin-top: 10rem;
     margin-bottom: 10rem;
     text-align: center;
@@ -149,6 +150,7 @@ main {
 }
 
 .icons {
+    position: relative;
     margin: 3rem 10%;
     display: flex;
     justify-content: center;
@@ -156,10 +158,39 @@ main {
     flex-wrap: wrap;
 }
 
-#tech img {
+#tech .icon {
     padding: 7rem;
+    transition: 0.3s;
+}
+
+#tech img {
+    position: relative;
+    padding: 2rem;
     width: 9rem;
-    filter: invert();
+    height: 9rem;
+    object-fit: contain;
+    filter: invert(); 
+    transition: 0.3s;
+}
+
+.info-overlay {
+    opacity: 0;
+    position: absolute;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3rem;
+    border-radius: 25px 10px 10px 25px;
+    padding-left: 13rem;
+    height: 8rem;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.info-overlay ul {
+    margin-top: 1rem;
+    line-height: 2;
 }
 
 /* Footer */
