@@ -2,7 +2,7 @@
 const icons = document.querySelectorAll('#tech .icon img');
 const overlays = document.querySelectorAll('.info-overlay');
 
-function iconOpacityChange(event) {
+function iconOverlayOn(event) {
     //lower non-target icons opacities
     icons.forEach(element => {
         element.style.opacity = '0.25';
@@ -14,7 +14,7 @@ function iconOpacityChange(event) {
     overlayNode.style.opacity = '1';
 }
 
-function iconOpacityDefault(event) {
+function iconOverlayOff(event) {
     //set icon opacities back to default
     icons.forEach(element => {
         element.style.opacity = '';
@@ -27,7 +27,7 @@ function iconOpacityDefault(event) {
 
 
 icons.forEach(element => {
-    element.addEventListener('mouseover', iconOpacityChange);
-    element.addEventListener('mouseout', iconOpacityDefault);
+    element.addEventListener('mouseover', iconOverlayOn);
+    element.addEventListener('mouseout', iconOverlayOff);
 });
 
