@@ -10,6 +10,8 @@ header {
     position: fixed;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    height: 4.5rem;
 }
 
 nav {
@@ -64,14 +66,73 @@ nav a:hover {
 
 main {
     position: relative;
-    top: 100px;
-    padding: 3%;
+    top: 4.5rem;
 }
 
 /* Banner */
 
 .banner {
+    height: 45rem;
+    background-image:         
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.35), 
+      rgba(0, 0, 0, 0.35)
+    ),
+    /* bottom, image */
+    url("../media/images/profile_photo_002.png");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 1fr;
+    padding: 0 8%;
+}
+
+.overlay-text {
+    display: grid;
+    grid-template-areas: "title title"
+                         "job-title job-title"
+                         "job-description contact";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: space-evenly;
+}
+
+.banner h1, h2 {
+    text-transform: uppercase;
+}
+
+.banner .title {
+    grid-area: title;
+    font-size: 4.5rem;
+}
+
+#job-title {
+    grid-area: job-title;
+    font-weight: 200;
+    font-size: 1.25rem;
+}
+
+#job-description {
+    grid-area: job-description;
+}
+
+.banner .contact {
+    grid-area: contact;
+}
+
+.contact {
     display: flex;
+    padding: 3% 1%; 
+}
+
+.contact img {
+    width: 3rem;
+    filter: invert();
 }
 
 /* Footer */
