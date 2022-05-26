@@ -67,6 +67,7 @@ nav a:hover {
 main {
     position: relative;
     top: 4.5rem;
+    margin-bottom: 4.5rem;
 }
 
 /* Banner */
@@ -133,6 +134,69 @@ main {
 .contact img {
     width: 3rem;
     filter: invert();
+}
+
+/* Technologies */
+
+#tech {
+    position: relative;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+#tech h2 {
+    font-size: 3.5rem;
+}
+
+.icons {
+    position: relative;
+    margin: 3rem 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#tech .icon {
+    padding: 7rem;
+    transition: 0.3s;
+}
+
+#tech img {
+    z-index: 3;
+    position: relative;
+    padding: 2rem;
+    width: 9rem;
+    height: 9rem;
+    object-fit: contain;
+    filter: invert(); 
+    transition: 0.3s;
+}
+
+.info-overlay {
+    opacity: 0;
+    position: absolute;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3rem;
+    border-radius: 25px 10px 10px 25px;
+    padding-left: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    transition: 0.3s;
+}
+
+.icon-right {
+    left: 1rem;
+    padding-right: 13rem;
+    padding-left: 2.5rem;
+}
+
+.info-overlay ul {
+    margin-top: 1rem;
+    line-height: 2;
 }
 
 /* Footer */
