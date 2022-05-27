@@ -92,7 +92,7 @@ main {
     padding: 0 8%;
 }
 
-.overlay-text {
+.banner .overlay-text {
     display: grid;
     grid-template-areas: "title title"
                          "job-title job-title"
@@ -197,6 +197,110 @@ main {
 .info-overlay ul {
     margin-top: 1rem;
     line-height: 2;
+}
+
+/* Projects */
+
+.projects {
+    position: relative;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+}
+
+.projects video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(70%);
+}
+
+.project-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 3rem 0;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+}
+
+.project-banner .overlay-text {
+    width: 100%;
+    z-index: 3;
+    display: grid;
+    grid-template-areas: "logo logo logo"
+                         "website-button name project-button"
+                         "description description description";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.project-banner img {
+    grid-area: logo;
+    height: 4rem;
+}
+
+.project-banner .website-button {
+    grid-area: website-button;
+}
+
+.project-banner h3 {
+    grid-area: name;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.project-banner .project-button {
+    grid-area: project-button;
+}
+
+.project-banner p {
+    grid-area: description;
+    margin: 0 20%;
+    line-height: 2;
+}
+
+.project-banner a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    word-spacing: 0.05rem;
+    color: #EEEEEE;
+    border: 1px solid #EEEEEE;
+    border-radius: 2px;
+    padding: 1.5rem;
+    transition: 0.5s;
+}
+
+.project-banner a:hover {
+    background-color: #EEEEEE;
+    color: #082032;
+    transition: 0.5s;
+}
+
+.project-banner a:active {
+    background-color: #727272;
+    border-color: #727272;
+    transition: 0.3s;
+}
+
+#weekly-tournaments video {
+    filter: brightness(50%);
+}
+
+#microsoft img {
+    filter: invert();
 }
 
 /* Footer */
