@@ -128,12 +128,36 @@ main {
 
 .contact {
     display: flex;
-    padding: 3% 1%; 
+    padding: 3% 1%;
 }
 
 .contact img {
-    width: 3rem;
+    width: 2.5rem;
     filter: invert();
+}
+
+.banner .icon {
+    z-index: 3;
+}
+
+.popout-container {
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0.35rem;
+}
+
+.popout {
+    color: #EEEEEE;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: 0.3s;
+    position: absolute;
+    width: 12rem;
+    overflow: hidden;
+    text-align: center;
 }
 
 /* Technologies */
