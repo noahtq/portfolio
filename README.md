@@ -21,6 +21,7 @@ This is the portfolio website for Noah Turnquist showcasing my Full-Stack Web De
 + Javascript
 + Mocha
 + Node JS
++ Open Weather API
 
 ## Collaborators
 + Noah Turnquist (vfx.noaht@gmail.com) - Full-stack Developer
