@@ -15,6 +15,7 @@
     <!-- Scripts -->
     <script src="./javascript/nav.js" defer></script>
     <script src="./javascript/tech.js" defer></script>
+    <script type="module" src="./javascript/weather/updateWeather.js" defer></script>
 </head>
 <body>
     <header>
@@ -32,6 +33,31 @@
     </header>
     <main>
         <section class="banner">
+            <div class="information-overlay">
+                <div class="weather-info">
+                    <div class="weather weather-icon">
+                        <img src="" alt="">
+                    </div>
+                    <div class="weather weather-condition">
+                        <span></span>
+                    </div>
+                    <div class="weather weather-location">
+                        <span></span>
+                    </div>
+                    <div class="weather weather-current">
+                        <span></span><span>&#176;</span>
+                    </div>
+                    <div class="weather weather-high">
+                        <span class="bold">High:</span>
+                        <span class="temp"></span><span>&#176;</span>
+                    </div>
+                    <div class="weather weather-low">
+                        <span class="bold">Low:</span>
+                        <span class="temp"></span><span>&#176;</span>
+                    </div>
+                </div>
+                <div class="time-info"></div>
+            </div>
             <div class="spacer"></div>
             <div class="overlay-text">
                 <h1 class="title">Noah Turnquist</h1>
